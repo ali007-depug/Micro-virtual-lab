@@ -1,0 +1,557 @@
+import type { EquipmentEntry } from "../types";
+// import { incubatorHotspots } from "./incubatorHotspots"
+// import { autoclaveHotspots } from "./autoclaveHotspots"
+
+export const equipmentCatalog: EquipmentEntry[] = [
+  // ── Core Laboratory Equipment ──
+  {
+    id: "incubator",
+    name: "Incubator",
+    category: "core",
+    tier: "interactive",
+    icon: "thermometer",
+    // modelUrl: "/models/incubator.glb",
+    imageUrl:"incubator.webp",
+    description:
+      "Maintains stable temperatures (37°C, 42°C, 25°C) for growing bacterial cultures. Keep the door shut during incubation.",
+  },
+  {
+    id: "co2-incubator",
+    name: "CO₂ Incubator",
+    category: "core",
+    tier: "simple",
+    icon: "gauge",
+    imageUrl:"c-co2-incubators.png",
+    description:
+      "Controls CO₂ concentration and humidity for culturing CO₂-sensitive bacteria.",
+  },
+  {
+    id: "biosafety-cabinet",
+    name: "Biosafety Cabinet Class II",
+    category: "core",
+    tier: "simple",
+    icon: "shield-alert",
+    imageUrl:"Biosafety-Cabinet.jpg",
+
+    description:
+      "Provides a sterile airflow barrier for safely handling infectious samples.",
+  },
+  {
+    id: "autoclave",
+    name: "Autoclave",
+    category: "core",
+    tier: "interactive",
+    icon: "flame",
+    imageUrl:"autoclave.webp",
+    description:
+      "Sterilizes equipment and media using pressurized steam, typically at 121°C.",
+  },
+  {
+    id: "hot-air-oven",
+    name: "Hot Air Oven",
+    category: "core",
+    tier: "simple",
+    icon: "sun",
+    imageUrl:"hot-air-oven.webp",
+    description: "Sterilizes glassware and heat-stable tools using dry heat.",
+  },
+  {
+    id: "fridge-freezer",
+    name: "Refrigerators & Freezers (-20°C / -80°C)",
+    category: "core",
+    tier: "simple",
+    icon: "snowflake",
+    imageUrl:"lab-ref.jpg",
+    description:
+      "Preserves samples, reagents, and long-term bacterial stock cultures.",
+  },
+  {
+    id: "water-bath",
+    name: "Water Bath",
+    category: "core",
+    tier: "simple",
+    icon: "waves",
+    imageUrl:"water-bath.webp",
+    description:
+      "Holds a constant temperature for incubating tests and reagents.",
+  },
+  {
+    id: "centrifuge",
+    name: "Centrifuge",
+    category: "core",
+    tier: "simple",
+    icon: "rotate-cw",
+    imageUrl:"Centrifuge.webp",
+    description:
+      "Spins samples at high speed to separate components by density.",
+  },
+  {
+    id: "light-microscope",
+    name: "Light Microscope",
+    category: "core",
+    tier: "simple",
+    icon: "microscope",
+    imageUrl:"light-microscope.webp",
+    description: "Direct visual examination of bacteria, fungi, and parasites.",
+  },
+  {
+    id: "phase-contrast-microscope",
+    name: "Phase Contrast Microscope",
+    category: "core",
+    tier: "simple",
+    icon: "microscope",
+    imageUrl:"phase-contrast-microscope.webp",
+    description:
+      "Enhances contrast in unstained, living specimens for clearer observation.",
+  },
+  {
+    id: "colony-counter",
+    name: "Colony Counter",
+    category: "core",
+    tier: "simple",
+    icon: "hash",
+    imageUrl:"colony-counter.webp",
+    description:
+      "Accurately counts bacterial colonies grown on culture plates.",
+  },
+  {
+    id: "analytical-balance",
+    name: "Analytical Balance",
+    category: "core",
+    tier: "simple",
+    icon: "scale",
+    imageUrl:"analytical-balance.webp",
+    description: "Precisely weighs reagents and media components.",
+  },
+  {
+    id: "ph-meter",
+    name: "pH Meter",
+    category: "core",
+    tier: "simple",
+    icon: "gauge",
+    imageUrl:"ph-meter.webp",
+    description: "Measures and adjusts the pH of culture media.",
+  },
+  {
+    id: "vortex-mixer",
+    name: "Vortex Mixer",
+    category: "core",
+    tier: "simple",
+    icon: "wind",
+    imageUrl:"vortex-mixer.webp",
+    description: "Rapidly mixes and homogenizes liquid samples.",
+  },
+  {
+    id: "shaker-incubator",
+    name: "Shaker Incubator",
+    category: "core",
+    tier: "simple",
+    icon: "waves",
+    imageUrl:"shaker-incubator.webp",
+    description:
+      "Agitates and incubates liquid bacterial cultures simultaneously.",
+  },
+
+  // ── Culture & Identification Tools ──
+  {
+    id: "petri-dishes",
+    name: "Petri Dishes",
+    category: "culture",
+    tier: "simple",
+    icon: "circle",
+    description:
+      "Shallow dishes used to culture and isolate microbial colonies.",
+  },
+  {
+    id: "inoculating-loops",
+    name: "Inoculating Loops & Needles",
+    category: "culture",
+    tier: "simple",
+    icon: "wand-2",
+    description:
+      "Metal or disposable tools used to transfer bacterial samples onto media.",
+  },
+  {
+    id: "bunsen-burner",
+    name: "Bunsen Burner / Spirit Lamp",
+    category: "culture",
+    tier: "simple",
+    icon: "flame",
+    description:
+      "Provides an open flame for sterilizing tools and maintaining aseptic technique.",
+  },
+  {
+    id: "culture-media",
+    name: "Culture Media",
+    category: "culture",
+    tier: "simple",
+    icon: "test-tube",
+    description:
+      "Ready-made & dehydrated media: Blood agar, MacConkey, Chocolate, Sabouraud, LJ, TCBS, XLD, Mannitol salt agar.",
+  },
+  {
+    id: "anaerobic-jars",
+    name: "Anaerobic Jars & Gas Packs",
+    category: "culture",
+    tier: "simple",
+    icon: "package",
+    description:
+      "Creates an oxygen-free environment for culturing anaerobic bacteria.",
+  },
+  {
+    id: "sterile-swabs",
+    name: "Sterile Swabs",
+    category: "culture",
+    tier: "simple",
+    icon: "feather",
+    description: "Used to collect clinical specimens for culture and testing.",
+  },
+  {
+    id: "sterile-tubes",
+    name: "Sterile Tubes (Glass & Plastic)",
+    category: "culture",
+    tier: "simple",
+    icon: "test-tube",
+    description: "Hold samples, media, and reagents under sterile conditions.",
+  },
+  {
+    id: "broth-media",
+    name: "Broth Media",
+    category: "culture",
+    tier: "simple",
+    icon: "flask-conical",
+    description: "Liquid growth media: Nutrient broth, TSB, BHI.",
+  },
+
+  // ── Microscopy & Staining ──
+  {
+    id: "gram-stain-kit",
+    name: "Gram Stain Kit",
+    category: "microscopy",
+    tier: "simple",
+    icon: "droplet",
+    description:
+      "Differentiates Gram-positive from Gram-negative bacteria by cell wall staining.",
+  },
+  {
+    id: "zn-stain",
+    name: "Ziehl–Neelsen Stain",
+    category: "microscopy",
+    tier: "simple",
+    icon: "droplet",
+    description: "Identifies acid-fast bacteria such as Mycobacteria.",
+  },
+  {
+    id: "kinyoun-stain",
+    name: "Kinyoun Stain",
+    category: "microscopy",
+    tier: "simple",
+    icon: "droplet",
+    description:
+      "A cold acid-fast staining method, an alternative to Ziehl–Neelsen.",
+  },
+  {
+    id: "india-ink",
+    name: "India Ink",
+    category: "microscopy",
+    tier: "simple",
+    icon: "pen-tool",
+    description:
+      "Negative staining used to visualize encapsulated organisms like Cryptococcus.",
+  },
+  {
+    id: "lpcb-stain",
+    name: "Lactophenol Cotton Blue",
+    category: "microscopy",
+    tier: "simple",
+    icon: "droplet",
+    description: "Stains fungal structures for microscopic identification.",
+  },
+  {
+    id: "giemsa-stain",
+    name: "Giemsa Stain",
+    category: "microscopy",
+    tier: "simple",
+    icon: "droplet",
+    description: "Used to identify blood parasites and cell morphology.",
+  },
+  {
+    id: "slides-coverslips",
+    name: "Slides & Cover Slips",
+    category: "microscopy",
+    tier: "simple",
+    icon: "layers",
+    description: "Hold specimens in place for microscopic examination.",
+  },
+  {
+    id: "slide-warmer",
+    name: "Slide Warmer",
+    category: "microscopy",
+    tier: "simple",
+    icon: "thermometer",
+    description: "Gently heats slides to fix specimens before staining.",
+  },
+  {
+    id: "staining-racks",
+    name: "Staining Racks",
+    category: "microscopy",
+    tier: "simple",
+    icon: "align-justify",
+    description: "Hold multiple slides during the staining process.",
+  },
+
+  // ── Biochemical & Rapid Tests ──
+  {
+    id: "catalase-test",
+    name: "Catalase Test Reagents",
+    category: "biochemical",
+    tier: "simple",
+    icon: "beaker",
+    description:
+      "Detects the catalase enzyme to help differentiate bacterial species.",
+  },
+  {
+    id: "oxidase-strips",
+    name: "Oxidase Test Strips",
+    category: "biochemical",
+    tier: "simple",
+    icon: "beaker",
+    description: "Detects cytochrome oxidase activity in bacteria.",
+  },
+  {
+    id: "coagulase-kit",
+    name: "Coagulase Test Kits",
+    category: "biochemical",
+    tier: "simple",
+    icon: "beaker",
+    description: "Identifies Staphylococcus aureus by clotting plasma.",
+  },
+  {
+    id: "api-strips",
+    name: "API Strips",
+    category: "biochemical",
+    tier: "simple",
+    icon: "list-checks",
+    description:
+      "Miniaturized biochemical identification panels: API 20E, API Staph, API Strept.",
+  },
+  {
+    id: "carb-fermentation-tubes",
+    name: "Carbohydrate Fermentation Tubes",
+    category: "biochemical",
+    tier: "simple",
+    icon: "test-tube",
+    description: "Tests a bacterium's ability to ferment specific sugars.",
+  },
+  {
+    id: "urease-test",
+    name: "Urease Test",
+    category: "biochemical",
+    tier: "simple",
+    icon: "beaker",
+    description:
+      "Detects urease enzyme activity, useful for identifying species like Proteus.",
+  },
+  {
+    id: "tsi-slants",
+    name: "TSI Slants",
+    category: "biochemical",
+    tier: "simple",
+    icon: "test-tube",
+    description:
+      "Triple Sugar Iron test differentiates enteric bacteria by fermentation and gas/H₂S production.",
+  },
+  {
+    id: "citrate-test",
+    name: "Citrate Test",
+    category: "biochemical",
+    tier: "simple",
+    icon: "beaker",
+    description:
+      "Determines if bacteria can use citrate as their sole carbon source.",
+  },
+  {
+    id: "indole-test",
+    name: "Indole Test Reagents",
+    category: "biochemical",
+    tier: "simple",
+    icon: "beaker",
+    description: "Detects indole production from tryptophan breakdown.",
+  },
+  {
+    id: "nitrate-reduction",
+    name: "Nitrate Reduction Test",
+    category: "biochemical",
+    tier: "simple",
+    icon: "beaker",
+    description: "Tests a bacterium's ability to reduce nitrate to nitrite.",
+  },
+  {
+    id: "motility-media",
+    name: "Motility Media",
+    category: "biochemical",
+    tier: "simple",
+    icon: "test-tube",
+    description: "Semi-solid media used to observe bacterial motility.",
+  },
+  {
+    id: "antibiotic-discs",
+    name: "Antibiotic Discs (Kirby-Bauer)",
+    category: "biochemical",
+    tier: "simple",
+    icon: "circle-dot",
+    description:
+      "Used in disc diffusion testing to determine antibiotic susceptibility.",
+  },
+  {
+    id: "mcfarland-standards",
+    name: "McFarland Turbidity Standards",
+    category: "biochemical",
+    tier: "simple",
+    icon: "test-tube",
+    description:
+      "Reference standards for adjusting bacterial suspension density.",
+  },
+  {
+    id: "disk-dispenser",
+    name: "Disk Dispenser",
+    category: "biochemical",
+    tier: "simple",
+    icon: "package",
+    description: "Evenly places antibiotic discs onto agar plates.",
+  },
+  {
+    id: "zone-reader",
+    name: "Zone Reader",
+    category: "biochemical",
+    tier: "simple",
+    icon: "ruler",
+    description:
+      "Measures inhibition zones around antibiotic discs (optional equipment).",
+  },
+
+  // ── Molecular Diagnostics ──
+  {
+    id: "pcr-machine",
+    name: "PCR Machine (Thermal Cycler)",
+    category: "molecular",
+    tier: "simple",
+    icon: "cpu",
+    description:
+      "Amplifies DNA sequences through repeated heating and cooling cycles.",
+  },
+  {
+    id: "qpcr",
+    name: "Real-time PCR (qPCR)",
+    category: "molecular",
+    tier: "simple",
+    icon: "cpu",
+    description: "Amplifies and quantifies DNA in real time during each cycle.",
+  },
+  {
+    id: "gel-electrophoresis",
+    name: "Gel Electrophoresis System",
+    category: "molecular",
+    tier: "simple",
+    icon: "grid-3x3",
+    description: "Separates DNA fragments by size using an electric field.",
+  },
+  {
+    id: "gel-doc",
+    name: "Gel Documentation System",
+    category: "molecular",
+    tier: "simple",
+    icon: "camera",
+    description: "Captures and analyzes images of DNA gels under UV light.",
+  },
+  {
+    id: "micropipettes",
+    name: "Micropipettes (P10, P100, P1000)",
+    category: "molecular",
+    tier: "simple",
+    icon: "pipette",
+    description: "Precisely measure and transfer small liquid volumes.",
+  },
+  {
+    id: "pcr-tubes",
+    name: "PCR Tubes",
+    category: "molecular",
+    tier: "simple",
+    icon: "test-tube",
+    description:
+      "Thin-walled tubes designed for rapid heat transfer during PCR.",
+  },
+  {
+    id: "dna-extraction-kits",
+    name: "DNA Extraction Kits",
+    category: "molecular",
+    tier: "simple",
+    icon: "dna",
+    description: "Isolate and purify DNA from biological samples.",
+  },
+  {
+    id: "electrophoresis-power-supply",
+    name: "Electrophoresis Power Supply",
+    category: "molecular",
+    tier: "simple",
+    icon: "zap",
+    description:
+      "Provides the electric current needed for gel electrophoresis.",
+  },
+  {
+    id: "agarose-buffers",
+    name: "Agarose & Buffers",
+    category: "molecular",
+    tier: "simple",
+    icon: "beaker",
+    description:
+      "Form the gel matrix and maintain ion balance during electrophoresis.",
+  },
+
+  // ── Immunology & Serology ──
+  {
+    id: "elisa-reader",
+    name: "ELISA Reader & Washer",
+    category: "immunology",
+    tier: "simple",
+    icon: "monitor",
+    description:
+      "Measures and processes antigen-antibody reactions in microplates.",
+  },
+  {
+    id: "rapid-antigen-tests",
+    name: "Rapid Antigen Tests (Lateral Flow)",
+    category: "immunology",
+    tier: "simple",
+    icon: "clipboard-check",
+    description:
+      "Quickly detects specific antigens using lateral flow immunoassays.",
+  },
+  {
+    id: "latex-agglutination",
+    name: "Latex Agglutination Kits",
+    category: "immunology",
+    tier: "simple",
+    icon: "beaker",
+    description:
+      "Detects antigens or antibodies through visible latex particle clumping.",
+  },
+  {
+    id: "serological-pipettes",
+    name: "Serological Pipettes",
+    category: "immunology",
+    tier: "simple",
+    icon: "syringe",
+    description:
+      "Transfer larger, precise volumes of liquid in serological testing.",
+  },
+  {
+    id: "microplates",
+    name: "Microplates (96-well)",
+    category: "immunology",
+    tier: "simple",
+    icon: "grid-3x3",
+    description:
+      "Standard plates used for running multiple immunoassays simultaneously.",
+  },
+];
