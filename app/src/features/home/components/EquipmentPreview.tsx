@@ -17,7 +17,7 @@ export default function EquipmentPreview() {
         </div>
         <div className="grid gap-6 sm:grid-cols-3">
           {items.map((item) => {
-            const Icon = ICONS[item.icon] ?? Microscope
+            const Icon = ICONS[item.icon as keyof typeof ICONS] ?? Microscope
             return (
               <Card key={item.id} className="border-ink/10 hover:border-colony/50 transition-colors">
                 <CardHeader className="flex flex-row items-center gap-3">

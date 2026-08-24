@@ -1,10 +1,21 @@
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
-import type { Hotspot3D } from "../types"
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import type { Hotspot3D } from "../types";
+import { Button } from "@/components/ui/button";
 
-export function HotspotMarker({ hotspot, onClick }: { hotspot: Hotspot3D; onClick?: () => void }) {
+export function HotspotMarker({
+  hotspot,
+  onClick,
+}: {
+  hotspot: Hotspot3D;
+  onClick?: () => void;
+}) {
   return (
     <Popover>
-      <PopoverTrigger asChild>
+      <PopoverTrigger render={<Button variant="outline" />}>
         <button
           type="button"
           onClick={onClick}
@@ -16,9 +27,13 @@ export function HotspotMarker({ hotspot, onClick }: { hotspot: Hotspot3D; onClic
         </button>
       </PopoverTrigger>
       <PopoverContent className="w-56 border-ink/10">
-        <p className="font-display text-sm font-semibold text-ink">{hotspot.label}</p>
-        <p className="mt-1 text-xs text-ink/70 leading-relaxed">{hotspot.description}</p>
+        <p className="font-display text-sm font-semibold text-ink">
+          {hotspot.label}
+        </p>
+        <p className="mt-1 text-xs text-ink/70 leading-relaxed">
+          {hotspot.description}
+        </p>
       </PopoverContent>
     </Popover>
-  )
+  );
 }
