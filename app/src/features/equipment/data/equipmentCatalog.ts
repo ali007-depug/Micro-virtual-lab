@@ -11,7 +11,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     tier: "interactive",
     icon: "thermometer",
     // modelUrl: "/models/incubator.glb",
-    imageUrl:"incubator.webp",
+    imageUrl:"incu.jpg",
     description:
       "Maintains stable temperatures (37°C, 42°C, 25°C) for growing bacterial cultures. Keep the door shut during incubation.",
   },
@@ -159,6 +159,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "culture",
     tier: "simple",
     icon: "circle",
+    imageUrl:"Petri-Dish.webp",
     description:
       "Shallow dishes used to culture and isolate microbial colonies.",
   },
@@ -168,6 +169,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "culture",
     tier: "simple",
     icon: "wand-2",
+    imageUrl:"Tool-Group-2.webp",
     description:
       "Metal or disposable tools used to transfer bacterial samples onto media.",
   },
@@ -177,6 +179,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "culture",
     tier: "simple",
     icon: "flame",
+    imageUrl:"spirit-lamp.webp",
     description:
       "Provides an open flame for sterilizing tools and maintaining aseptic technique.",
   },
@@ -186,6 +189,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "culture",
     tier: "simple",
     icon: "test-tube",
+    imageUrl:"culture-media.webp",
     description:
       "Ready-made & dehydrated media: Blood agar, MacConkey, Chocolate, Sabouraud, LJ, TCBS, XLD, Mannitol salt agar.",
   },
@@ -195,6 +199,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "culture",
     tier: "simple",
     icon: "package",
+    imageUrl:"culture-jar.webp",
     description:
       "Creates an oxygen-free environment for culturing anaerobic bacteria.",
   },
@@ -204,6 +209,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "culture",
     tier: "simple",
     icon: "feather",
+    imageUrl:"swaps.webp",
     description: "Used to collect clinical specimens for culture and testing.",
   },
   {
@@ -212,6 +218,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "culture",
     tier: "simple",
     icon: "test-tube",
+    imageUrl:"tubes.webp",
     description: "Hold samples, media, and reagents under sterile conditions.",
   },
   {
@@ -220,6 +227,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "culture",
     tier: "simple",
     icon: "flask-conical",
+    imageUrl:"broth-media.webp",
     description: "Liquid growth media: Nutrient broth, TSB, BHI.",
   },
 
@@ -230,6 +238,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "microscopy",
     tier: "simple",
     icon: "droplet",
+    imageUrl:"gram-stain-kit.webp",
     description:
       "Differentiates Gram-positive from Gram-negative bacteria by cell wall staining.",
   },
@@ -239,6 +248,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "microscopy",
     tier: "simple",
     icon: "droplet",
+    imageUrl:"ziehl-stain.webp",
     description: "Identifies acid-fast bacteria such as Mycobacteria.",
   },
   {
@@ -247,6 +257,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "microscopy",
     tier: "simple",
     icon: "droplet",
+    imageUrl:"kin-stain.webp",
     description:
       "A cold acid-fast staining method, an alternative to Ziehl–Neelsen.",
   },
@@ -256,6 +267,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "microscopy",
     tier: "simple",
     icon: "pen-tool",
+    imageUrl:"lnk.webp",
     description:
       "Negative staining used to visualize encapsulated organisms like Cryptococcus.",
   },
@@ -265,6 +277,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "microscopy",
     tier: "simple",
     icon: "droplet",
+    imageUrl:"cotton.webp",
     description: "Stains fungal structures for microscopic identification.",
   },
   {
@@ -273,6 +286,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "microscopy",
     tier: "simple",
     icon: "droplet",
+    imageUrl:"gi-stain.webp",
     description: "Used to identify blood parasites and cell morphology.",
   },
   {
@@ -281,6 +295,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "microscopy",
     tier: "simple",
     icon: "layers",
+    imageUrl:"slide-and-cover.webp",
     description: "Hold specimens in place for microscopic examination.",
   },
   {
@@ -289,6 +304,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "microscopy",
     tier: "simple",
     icon: "thermometer",
+    imageUrl:"slides-warmer.webp",
     description: "Gently heats slides to fix specimens before staining.",
   },
   {
@@ -297,6 +313,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "microscopy",
     tier: "simple",
     icon: "align-justify",
+    imageUrl:"stain-racks.webp",
     description: "Hold multiple slides during the staining process.",
   },
 
@@ -307,6 +324,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "biochemical",
     tier: "simple",
     icon: "beaker",
+    imageUrl:"test.webp",
     description:
       "Detects the catalase enzyme to help differentiate bacterial species.",
   },
@@ -316,6 +334,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "biochemical",
     tier: "simple",
     icon: "beaker",
+    imageUrl:"oxide-test.webp",
     description: "Detects cytochrome oxidase activity in bacteria.",
   },
   {
@@ -324,6 +343,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "biochemical",
     tier: "simple",
     icon: "beaker",
+    imageUrl:"coagulase-test-results.webp",
     description: "Identifies Staphylococcus aureus by clotting plasma.",
   },
   {
