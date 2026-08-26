@@ -41,4 +41,5 @@ export interface CategoryMeta {
   name: string;
   nameAr: string;
   accent: Accent;
+  imageUrl?: string;
 }
