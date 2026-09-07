@@ -11,7 +11,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     tier: "interactive",
     icon: "thermometer",
     // modelUrl: "/models/incubator.glb",
-    imageUrl:"incu.jpg",
+    imageUrl:"incu.webp",
     description:
       "Maintains stable temperatures (37°C, 42°C, 25°C) for growing bacterial cultures. Keep the door shut during incubation.",
   },
@@ -21,7 +21,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "core",
     tier: "simple",
     icon: "gauge",
-    imageUrl:"c-co2-incubators.png",
+    imageUrl:"c-co2-incubators.webp",
     description:
       "Controls CO₂ concentration and humidity for culturing CO₂-sensitive bacteria.",
   },
@@ -31,7 +31,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "core",
     tier: "simple",
     icon: "shield-alert",
-    imageUrl:"Biosafety-Cabinet.jpg",
+    imageUrl:"Biosafety-Cabinet.webp",
 
     description:
       "Provides a sterile airflow barrier for safely handling infectious samples.",
@@ -61,7 +61,7 @@ export const equipmentCatalog: EquipmentEntry[] = [
     category: "core",
     tier: "simple",
     icon: "snowflake",
-    imageUrl:"lab-ref.jpg",
+    imageUrl:"lab-ref.webp",
     description:
       "Preserves samples, reagents, and long-term bacterial stock cultures.",
   },

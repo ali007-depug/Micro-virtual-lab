@@ -8,7 +8,7 @@ export default function HeroSection() {
       {/* Background photo */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+        style={{ backgroundImage: "url('/hero-bg.webp')" }}
       />
 
       {/* Ink-tinted overlay — keeps the photo readable and on-brand instead of a flat solid color */}
